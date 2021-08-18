@@ -28,20 +28,13 @@ User.init(
         isEmail: true,
       },
     },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [8],
-      },
-    },
     github: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         len: [0],
       },
-  },
+    }
   },
   {
     hooks: {
