@@ -1,7 +1,7 @@
 const router = require ("express").Router();
 const RegisterUser = require ('../models/RegisterUser')
 
-router.get('/',async (req,res)=>{
+router.get('/user',async (req,res)=>{
   try {
       const projectData = await RegisterUser.findAll()
       const updatedUserData = projectData.map(RegisterUser => RegisterUser.get({
@@ -16,6 +16,9 @@ router.get('/',async (req,res)=>{
     
   }
   
+})
+router.get('/',(req,res) =>{
+  res.render('login');
 })
 
 module.exports = router;
