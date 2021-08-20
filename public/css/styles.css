@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    background-color: lightgrey;
+    padding: 15px 20px;
+    margin-bottom: 0;
+}
+
+h1{
+    color: navy;
+}
+h4 {
+    color: slategrey;
+}
+
+span {
+    color: #4682b4;
+}
+
+.navbar {
+    color: white;
+    background-color: #4682b4;
+    display: flex;
+    justify-content: end;
+}
+
+.btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.main {
+    margin:25px;
+}
+
+img {
+    width: 100%;
+}
