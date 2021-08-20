@@ -1,0 +1,28 @@
+{{#if loggedIn}}
+<section class="container">
+    <h2 class='title'>{{developer.name}}</h2>
+    <div class='main'>
+        <div class='row'>
+            <div class='col-6'>
+                <img src="/images/juan.jpg" alt="portrait of juan">
+            </div>
+            <div class='col-6'>
+                <p>{{developer.description}}.</p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-3'>
+            </div>
+            <div class='col-6'>
+                <p>Please leave a comment:</p>
+            </div>
+            <div class='col-3'>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+{{else}}
+<a href="/login">You must login first to view this page</a>
+{{/if}}
