@@ -15,8 +15,17 @@ router.get('/', async (req, res) => {
     res.status(500).send("there was an error")
 
   }
-  router.get('/homepage', (req, res) => {
-    res.render('homepage');
+  
+  router.get('/homepage/:id',async (req, res) => {
+    try {
+      const dbInfo = await RegisterUser.findByPk(req.params.id )
+       const User = dbInfo.get({ plain: true });
+       res.render('homepage',{User})
+      console.log(dbInfo);   
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);  
+    }
   })
 
   router.get('/login', (req, res) => {
@@ -26,5 +35,7 @@ router.get('/', async (req, res) => {
 router.get('/',(req,res) =>{
   res.render('login');
 })
+
+
 
 module.exports = router;
