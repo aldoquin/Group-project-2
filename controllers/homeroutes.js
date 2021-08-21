@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
     res.status(500).send("there was an error")
 
   }
-  router.get('/homepage', (req, res) => {
+  router.get('/homepage/:id', (req, res) => {
     res.render('homepage');
   })
 

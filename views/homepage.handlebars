@@ -1,14 +1,14 @@
 {{!-- {{#if loggedIn}} --}}
 
 <div class="container overflow-hidden" id="home-container">
-    {{!-- <h2 class='title'>Aldo Quintero</h2> --}}
+    {{!-- <h2 class='title'></h2> --}}
     <div class="row g-5">
         <div class="col-md-3">
-            <div class="p-2 border bg-light portrait"><img src="/images/aldo.jpg" alt="Juan's Portfolio">
+            <div class="p-2 border bg-light portrait"><img src="/images/{{user.picture}}" alt="{{user.desc}}">
             </div>
         </div>
         <div class="col-md-6" id="desc-box">
-            <h2 class='title'>Juan Bernal</h2>
+            <h2 class='title'>{{user.name}}</h2>
             <div class="p-2 border bg-light">
                 <p>Web developer with 5years of experience and background in graphic design.
                     Web developer with 5years of experience and background in graphic design.
