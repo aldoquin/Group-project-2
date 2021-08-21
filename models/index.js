@@ -1,4 +1,4 @@
-const User = require('./RegisterUser');
+const User = require('./devInfo');
 // const Project = require('./UserModel');
 
 // User.hasMany(Project, {

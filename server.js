@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 
 // got this from the project video this is the helper const its empty as of now 
-const hbs =exphbs.create({});
+const hbs = exphbs.create({});
 
 const sess = {
   secret: 'Super secret secret',
@@ -28,21 +28,18 @@ const sess = {
 
 app.use(session(sess));
 
-app.engine('handlebars',hbs.engine);
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public/style.css'))
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-
-
-
-sequelize.sync({force: false}).then(()=>{
-  app.listen(PORT, ()=> console.log("now listening"))
-})
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log("Now listening"))
+});
 
 
