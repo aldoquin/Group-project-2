@@ -23,9 +23,11 @@ createUser.init(
     email: {
       type: DataTypes.STRING,
       allowNull: false,
+      lowercase:true,
       unique: true,
       validate: {
         isEmail: true,
+        notEmpty: true
       },
     },
     password: {

@@ -3,18 +3,23 @@
     <div class='col-md-4'>
         <div class="login-card">
             <h2 class="page-title">Login</h2>
-            <form class="form login-form">
+            <form id= "login-form">
                 <div class="form-group">
                     <label for="email-login">Email:</label>
-                    <input class="form-input" type="text" id="email-login" />
+                    <input id="loginForm-email" type="text" id="email-login" />
                 </div>
                 <div class="form-group">
                     <label for="password-login">Password:</label>
-                    <input class="form-input" type="password" id="password-login" />
+                    <input id="loginForm-password" type="password" id="password-login" />
+                </div>
+            <div id="alert-container" class="invisible">
+        <div class="alert alert-warning" role="alert"> Login failed : Incorrect password or username
+                    </div>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit">login</button>
                 </div>
+
             </form>
         </div>
     </div>
