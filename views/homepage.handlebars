@@ -1,28 +1,47 @@
 {{!-- {{#if loggedIn}} --}}
 
-<div class="container overflow-hidden" id="home-container">
-    {{!-- <h2 class='title'>Aldo Quintero</h2> --}}
+<div class="container overflow-hidden">
+    {{!-- <h2 class='title'></h2> --}}
     <div class="row g-5">
-        <div class="col-md-3">
-            <div class="p-2 border bg-light portrait"><img src="/images/aldo.jpg" alt="Juan's Portfolio">
+        <div class="col-md-4 d-flex justify-content-center">
+            <div class="p-1 border bg-light portrait"><img src="/images/{{User.portrait}}">
             </div>
         </div>
-        <div class="col-md-6" id="desc-box">
-            <h2 class='title'>{{User.name}}</h2>
-            <div class="p-2 border bg-light">
-                <p>Web developer with 5years of experience and background in graphic design.
-                    Web developer with 5years of experience and background in graphic design.
-                    Web developer with 5years of experience and background in graphic design.
+        <div class="col-md-8 d-flex align-items-center">
+            <div class="p-1 border bg-light user-desc">
+                <h2 class='user-name'>{{User.name}}</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet obcaecati unde, hic qui perspiciatis
+                    nihil, placeat dolores ipsum dicta numquam quia, deserunt architecto mollitia cupiditate fugiat
+                    exercitationem illo voluptatum quidem!
                 </p>
+                <hr>
+                <div class='contact-link'>
+                    <a href="{{User.email}}">{{User.email}}</a>
+                    <a href="{{User.portfolio}}">My portfolio</a>
+                    <a href="{{User.github}}">github <i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="p-2 border bg-light">
-                <h4>Please leave a comment:</h4>
+            <div class="p-1 border bg-light">
+                <div class="title d-flex">
+                    <h4>Please leave a comment:</h4>
+                    <button class="btn comment-btn" type="submit">Submit</button>
+                </div>
+
                 <div class="input-group">
-                    {{!-- <span class="input-group-text">With textarea</span> --}}
                     <textarea class="form-control" aria-label="With textarea"></textarea>
-                    <button class="btn" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="p-1 border bg-light">
+                <h4>Most Recent Comments:</h4>
+                <div class="comment-area">
+                    <span>{{Guest.name}}</span>
+                    <span>{{Guest.comment}}</span>
+
                 </div>
             </div>
         </div>

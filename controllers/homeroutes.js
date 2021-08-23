@@ -15,16 +15,16 @@ router.get('/', async (req, res) => {
     res.status(500).send("there was an error")
 
   }
-  
-  router.get('/homepage/:id',async (req, res) => {
+
+  router.get('/homepage/:id', async (req, res) => {
     try {
-      const dbInfo = await RegisterUser.findByPk(req.params.id )
-       const User = dbInfo.get({ plain: true });
-       res.render('homepage',{User})
-      console.log(dbInfo);   
+      const dbInfo = await RegisterUser.findByPk(req.params.id)
+      const User = dbInfo.get({ plain: true });
+      res.render('homepage', { User })
+      console.log(dbInfo);
     } catch (err) {
       console.log(err);
-      res.status(500).json(err);  
+      res.status(500).json(err);
     }
   })
 
@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
     res.render('login');
   })
 })
-router.get('/',(req,res) =>{
+router.get('/', (req, res) => {
   res.render('login');
 })
 
