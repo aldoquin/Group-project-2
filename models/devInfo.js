@@ -28,7 +28,28 @@ User.init(
         isEmail: true,
       },
     },
+    portfolio: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [0],
+      },
+    },
     github: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [0],
+      },
+    },
+    portrait: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [0],
+      },
+    },
+    comment: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {

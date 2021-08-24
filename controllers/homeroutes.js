@@ -33,16 +33,16 @@ router.get('/',checkAuth, async (req, res) => {
     res.status(500).send("there was an error")
 
   }
-  
-  router.get('/homepage/:id',async (req, res) => {
+
+  router.get('/homepage/:id', async (req, res) => {
     try {
       const dbInfo = await RegisterUser.findByPk(req.params.id )
        const User = dbInfo.get({ plain: true });
        res.render('homepage',{User})
-      // console.log(dbInfo);   
+      console.log(dbInfo);   
     } catch (err) {
       console.log(err);
-      res.status(500).json(err);  
+      res.status(500).json(err);
     }
   })
 
@@ -50,8 +50,8 @@ router.get('/',checkAuth, async (req, res) => {
     res.render('login');
   })
 })
-router.get('/login',(req,res) =>{
-  res.render('login');
+router.post('/homepage/comments/:id',(req,res) =>{
+
 })
 
 

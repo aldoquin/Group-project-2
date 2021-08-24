@@ -1,4 +1,4 @@
 const User = require('./createUser');
 
 
-module.exports = { User};
+module.exports = {User};
