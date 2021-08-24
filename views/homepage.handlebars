@@ -27,20 +27,22 @@
 
         {{!-- guest comment card --}}
         <div class="col-md-6">
-            <div class="p-1 border class='comment-card">
+            <div class="p-1 border comment-card">
                 <div class="title d-flex">
+
                     <h3>Please leave a comment:</h3>
-                    <button class="btn" type="submit">Submit</button>
+                    <button id="submitB" class="btn">Submit</button>
                 </div>
 
                 <div class="input-group comment-card">
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <textarea id="form-control" aria-label="With textarea"></textarea>
                 </div>
             </div>
         </div>
+        
         {{!-- comment/review card --}}
         <div class="col-md-6">
-            <div class="p-1 border class='comment-card">
+            <div class="p-1 border comment-card">
                 <h3>Most Recent Comments:</h3>
                 <div class="comment-card">
                     <span>{{Guest.name}}</span>
@@ -51,6 +53,7 @@
         </div>
     </div>
 </div>
+<script src="../js/homefunction.js"></script>
 
 {{!-- {{else}}
 <a href="/login">You must login first to view this page</a>

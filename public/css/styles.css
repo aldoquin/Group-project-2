@@ -1,10 +1,10 @@
-/* background image from unsplash.com.  photographer: Luca Bravo. edited by Juan B.  */
+/* background image from unsplash.com.  photographer: Luca Bravo. */
 
 body {
-  background-image: url('/images/bg.jpg'); 
+  background-image: url('/images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   background-position: center;
   color: white;
 }
@@ -35,8 +35,8 @@ span, h3 {
   padding: 12px 25px;
 }
 
-.form a{
-    color: white;
+.form a {
+  color: white;
   text-decoration: none;
   margin-right: 20px;
 }
@@ -46,9 +46,8 @@ span, h3 {
 }
 
 .portfolio {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 img {
   width: 100%;
@@ -77,20 +76,21 @@ img {
     margin-left: 25px;
   }
 
-
 /* homepage style */
 
 .user-name {
-    color: navy;
-    padding:0 20px;
+  color: navy;
+  padding: 0 20px;
 }
+
 .user-desc p {
-    color: navy;
-    padding: 10px;
+  color: navy;
+  padding: 10px;
 }
+
 hr {
-    margin-top: 15px;
-    border:1px solid #4682b4;
+  margin-top: 15px;
+  border: 1px solid #4682b4;
 }
 
 .portrait {
@@ -112,13 +112,13 @@ hr {
 }
 
 .contact-link {
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.contact-link a{
-    text-decoration: none;
+.contact-link a {
+  text-decoration: none;
 }
 
 .comment-card {
@@ -148,10 +148,13 @@ hr {
     margin-left: 200px;
 }
 
+.invisible {
+  display: none;
+}
+
 /* smaller screen */
 @media (max-width: 768px){
     .footer p {
-        /* margin: auto; */
         font-size: .8rem;
       }
 }
@@ -162,3 +165,5 @@ hr {
         color: white;
     }
 }
+
+

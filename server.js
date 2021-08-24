@@ -1,11 +1,10 @@
 const express = require('express');
 const session = require('express-session');
-const routes = require('./controllers');
+const routes_1 = require('./controllers/api/');
+const routes_2 = require('./controllers')
 const exphbs = require('express-handlebars');
 const path = require('path');
-
-
-// const User = require('./models/RegisterUser')
+require('dotenv').config();
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -13,11 +12,10 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3002;
 
-// got this from the project video this is the helper const its empty as of now 
 const hbs = exphbs.create({});
 
 const sess = {
-  secret: 'Super secret secret',
+  secret: process.env.SESSION_SECRET,
   cookie: {},
   resave: false,
   saveUninitialized: true,
@@ -36,10 +34,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname +'/public')));
 
-app.use(routes);
+app.use(routes_1);
+app.use(routes_2);
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening"))
+
 });
 
 
