@@ -7,6 +7,7 @@
             <div class="p-1 border bg-light portrait"><img src="/images/{{User.portrait}}">
             </div>
         </div>
+        {{!-- developer description card --}}
         <div class="col-md-8 d-flex align-items-center">
             <div class="p-1 border bg-light user-desc">
                 <h2 class='user-name'>{{User.name}}</h2>
@@ -23,22 +24,27 @@
                 </div>
             </div>
         </div>
+
+        {{!-- guest comment card --}}
         <div class="col-md-6">
-            <div class="p-1 border bg-light">
+            <div class="p-1 border comment-card">
                 <div class="title d-flex">
-                    <h4>Please leave a comment:</h4>
-                    <button id="submitB" >Submit</button>
+
+                    <h3>Please leave a comment:</h3>
+                    <button id="submitB" class="btn">Submit</button>
                 </div>
 
-                <div class="input-group">
+                <div class="input-group comment-card">
                     <textarea id="form-control" aria-label="With textarea"></textarea>
                 </div>
             </div>
         </div>
+        
+        {{!-- comment/review card --}}
         <div class="col-md-6">
-            <div class="p-1 border bg-light">
-                <h4>Most Recent Comments:</h4>
-                <div class="comment-area">
+            <div class="p-1 border comment-card">
+                <h3>Most Recent Comments:</h3>
+                <div class="comment-card">
                     <span>{{Guest.name}}</span>
                     <span>{{Guest.comment}}</span>
 
