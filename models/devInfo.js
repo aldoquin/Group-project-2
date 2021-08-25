@@ -49,13 +49,13 @@ User.init(
         len: [0],
       },
     },
-    comment: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [0],
-      },
-    }
+    // comment: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   validate: {
+    //     len: [0],
+    //   },
+    // }
   },
   {
     // hooks: {
