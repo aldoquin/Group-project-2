@@ -49,7 +49,7 @@ createUser.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'UserAccount',
+    modelName: 'user',
   }
 );
 
