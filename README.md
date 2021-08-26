@@ -7,12 +7,20 @@
 
 ## Table of Contents
 * [Description](#description)
+* [Technologies Used] (#technologies)
 * [Contributing Members](#contributors)
 * [License](#license)
 * [Questions](#questions)
     
 ## Description
 We created creativeWeb... to showcase web developers and their work. The user can view the developers' profiles, get to know their portfolio, and connect to their github site. The user can leave feedback on the developers' profiles and view reviews by other users.
+
+## Technologies Used
+* Bootstrap
+* MYSQL
+* Sequelize
+* Handlebars
+* Heroku
 
 
 ## Contributing Members
