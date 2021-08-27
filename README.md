@@ -7,18 +7,24 @@
 
 ## Table of Contents
 * [Description](#description)
-* [Contributing Members](#contributors)
+* [Technologies Used](#technologies_used)
+* [Contributing Members](#contributing_members)
 * [License](#license)
 * [Questions](#questions)
     
 ## Description
 We created creativeWeb... to showcase web developers and their work. The user can view the developers' profiles, get to know their portfolio, and connect to their github site. The user can leave feedback on the developers' profiles and view reviews by other users.
 
+## Technologies Used
+* Bootstrap
+* MYSQL
+* Sequelize
+* Handlebars
+* Heroku
 
 ## Contributing Members
 * Aldo Quintero
 * Ever Medina
-* Michaela Galvez
 * Juan Bernal
 
 ## License
@@ -31,4 +37,4 @@ Please contact us via email or github to join our team or for more info.
 info@creativeweb.com
 
 ### GitHub Profile
-[GitHub Profile](https://github.com/JPablo73)
+[GitHub Profile](https://github.com/aldoquin/Group-project-2.git)
