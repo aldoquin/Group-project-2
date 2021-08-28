@@ -3,12 +3,13 @@
 
 ![Main Page](./public/images/main.jpg)
 
-#### https://evening-bayou-30737.herokuapp.com/
+#### https://aqueous-mountain-58085.herokuapp.com/
 
 ## Table of Contents
 * [Description](#description)
-* [Technologies Used] (#technologies)
-* [Contributing Members](#contributors)
+* [Technologies Used](#technologies_used)
+* [Contributing Members](#contributing_members)
+
 * [License](#license)
 * [Questions](#questions)
     
@@ -22,11 +23,9 @@ We created creativeWeb... to showcase web developers and their work. The user ca
 * Handlebars
 * Heroku
 
-
 ## Contributing Members
 * Aldo Quintero
 * Ever Medina
-* Michaela Galvez
 * Juan Bernal
 
 ## License
@@ -39,4 +38,5 @@ Please contact us via email or github to join our team or for more info.
 info@creativeweb.com
 
 ### GitHub Profile
-[GitHub Profile](https://github.com/JPablo73)
+[GitHub Profile](https://github.com/aldoquin/Group-project-2.git)
+
