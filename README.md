@@ -9,6 +9,7 @@
 * [Description](#description)
 * [Technologies Used](#technologies_used)
 * [Contributing Members](#contributing_members)
+
 * [License](#license)
 * [Questions](#questions)
     
@@ -38,3 +39,4 @@ info@creativeweb.com
 
 ### GitHub Profile
 [GitHub Profile](https://github.com/aldoquin/Group-project-2.git)
+
